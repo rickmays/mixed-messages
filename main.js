@@ -24,3 +24,7 @@ const adverbs = [
 
 const pronouns = [
     'he', 'she', 'they', 'we', 'it', 'I', 'you'];
+
+const stories = [
+    `A ${getNoun()} in Texas was arrested this morning after he ${getVerb()}ed a ${getNoun()} in front of ${getNoun()}. ${getName()}, had a history of ${getVerb()}, but no one-not even his ${getNoun()}-ever imagined he'd ${getVerb()} with a ${getNoun()}.`
+];
