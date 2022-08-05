@@ -3,6 +3,13 @@ const randomArrayValue = array => {
     return array[arrayIndex];
 }
 
+const getName = () => randomArrayValue(names);
+const getNoun = () => randomArrayValue(nouns);
+const getVerb = () => randomArrayValue(verbs);
+const getAdjective = () => randomArrayValue(adjectives);
+const getAdverb = () => randomArrayValue(adverbs);
+const getPronoun = () => randomArrayValue(pronouns);
+
 const names = [
     'Beyonce', 'Simon Cowell', 'Uhtred son of Uhtred', 'Nancy Pelosi', 'Henry Cisneros'
 ]
@@ -24,3 +31,4 @@ const adverbs = [
 
 const pronouns = [
     'he', 'she', 'they', 'we', 'it', 'I', 'you'];
+
