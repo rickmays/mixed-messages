@@ -21,6 +21,15 @@ const getPastVerb = () => {
     };
 };
 
+const getPreVerb = () => {
+    let verb = randomArrayValue(verbs);
+    if (verb[verb.length - 1] === 'e') {
+        return `${verb.slice(0, (verb.length - 1))}ing`
+    } else {
+        return `${verb}ing`
+    };
+};
+
 // capitalize first letter of string
 const cap = string => string.charAt(0).toUpperCase() + string.slice(1);
 
@@ -47,8 +56,8 @@ const pronouns = [
     'he', 'she', 'they', 'we', 'it', 'I', 'you'];
 
 const stories = [
-    `A ${getNoun()} in Texas was arrested this morning after he ${getPastVerb()} a ${getNoun()} in front of a ${getNoun()}. ${getName()} had a history of ${getVerb()}ing, but no one-not even his ${getNoun()}-ever imagined he'd ${getVerb()} with a ${getNoun()}. Credit: MadLibs`,
-    `${getName()} ${getPastVerb()} the habits of ${getNoun()} and ${getPronoun()} advised ${getVerb()}ing till ${getPronoun()} were ${getVerb()} on the ${getNoun()} when the ${getNoun()} before long would ${getVerb()} ${getPronoun()} to sleep. ${cap(getPronoun())} must then ${getVerb()} to ${getVerb()} off the ${getNoun()} and ${getVerb()} on the ${getNoun()}. Credit: The Mysterious Island by Jules Verne`
+    `A ${getNoun()} in Texas was arrested this morning after he ${getPastVerb()} a ${getNoun()} in front of a ${getNoun()}. ${getName()} had a history of ${getPreVerb()}, but no one-not even his ${getNoun()}-ever imagined he'd ${getVerb()} with a ${getNoun()}. Credit: MadLibs`,
+    `${getName()} ${getPastVerb()} the habits of ${getNoun()} and ${getPronoun()} advised ${getPreVerb()} till ${getPronoun()} were ${getPreVerb()} on the ${getNoun()} when the ${getNoun()} before long would ${getVerb()} ${getPronoun()} to sleep. ${cap(getPronoun())} must then ${getVerb()} to ${getVerb()} off the ${getNoun()} and ${getVerb()} on the ${getNoun()}. Credit: The Mysterious Island by Jules Verne`
 ];
 
 getStory();
