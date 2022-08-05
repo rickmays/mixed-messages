@@ -32,3 +32,6 @@ const adverbs = [
 const pronouns = [
     'he', 'she', 'they', 'we', 'it', 'I', 'you'];
 
+const stories = [
+    '${getName()} ${getVerb()}ed the habits of ${getNoun()} and ${getPronoun()} advised ${getVerb()}ing till ${getPronoun()} were ${getVerb()} on the ${getNoun()} when the {getNoun()} before long would ${getVerb()} {getPronoun()} to sleep. ${getPronoun()} must then ${getVerb()} to ${getVerb()} off the ${getNoun()} and ${getVerb()} on the ${getNoun()}'
+];
