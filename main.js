@@ -1,7 +1,9 @@
 const randomArrayValue = array => {
     let arrayIndex = Math.floor(Math.random() * array.length);
     return array[arrayIndex];
-}
+};
+
+const getStory = () => console.log(randomArrayValue(stories));
 
 const getName = () => randomArrayValue(names);
 const getNoun = () => randomArrayValue(nouns);
@@ -36,3 +38,5 @@ const stories = [
     `A ${getNoun()} in Texas was arrested this morning after he ${getVerb()}ed a ${getNoun()} in front of a ${getNoun()}. ${getName()}, had a history of ${getVerb()}ing, but no one-not even his ${getNoun()}-ever imagined he'd ${getVerb()} with a ${getNoun()}. Credit: MadLibs`,
     `${getName()} ${getVerb()}ed the habits of ${getNoun()} and ${getPronoun()} advised ${getVerb()}ing till ${getPronoun()} were ${getVerb()} on the ${getNoun()} when the ${getNoun()} before long would ${getVerb()} ${getPronoun()} to sleep. ${getPronoun()} must then ${getVerb()} to ${getVerb()} off the ${getNoun()} and ${getVerb()} on the ${getNoun()}. Credit: The Mysterious Island by Jules Verne`
 ];
+
+getStory();
