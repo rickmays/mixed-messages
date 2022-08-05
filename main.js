@@ -33,5 +33,6 @@ const pronouns = [
     'he', 'she', 'they', 'we', 'it', 'I', 'you'];
 
 const stories = [
-    '${getName()} ${getVerb()}ed the habits of ${getNoun()} and ${getPronoun()} advised ${getVerb()}ing till ${getPronoun()} were ${getVerb()} on the ${getNoun()} when the {getNoun()} before long would ${getVerb()} {getPronoun()} to sleep. ${getPronoun()} must then ${getVerb()} to ${getVerb()} off the ${getNoun()} and ${getVerb()} on the ${getNoun()}'
+    `A ${getNoun()} in Texas was arrested this morning after he ${getVerb()}ed a ${getNoun()} in front of ${getNoun()}. ${getName()}, had a history of ${getVerb()}, but no one-not even his ${getNoun()}-ever imagined he'd ${getVerb()} with a ${getNoun()}.`,
+    `${getName()} ${getVerb()}ed the habits of ${getNoun()} and ${getPronoun()} advised ${getVerb()}ing till ${getPronoun()} were ${getVerb()} on the ${getNoun()} when the {getNoun()} before long would ${getVerb()} {getPronoun()} to sleep. ${getPronoun()} must then ${getVerb()} to ${getVerb()} off the ${getNoun()} and ${getVerb()} on the ${getNoun()}`
 ];
