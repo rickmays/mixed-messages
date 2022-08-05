@@ -32,13 +32,21 @@ const getPreVerb = () => {
 
 const getPluralN = () => {
     let noun = randomArrayValue(nouns);
+    let vowels = ['a', 'e', 'i', 'o', 'u'];
     if (noun[noun.length - 1] === 's' || noun[noun.length - 1] === 'z' || noun[noun.length - 1] === 'x') {
         return `${noun}es`;
     } else if (noun.slice(noun.length - 2) === 'ss' || noun.slice(noun.length - 2) === 'sh' || noun.slice(noun.length - 2) === 'ch') {
         return `${noun}es`;
-    } else {
-        return `${noun}s`;
+    }
+
+    if (noun[noun.length - 1] === 'y') {
+        if (vowels.includes(noun[noun.length - 2])) {
+            return `${noun.slice(0, noun.length - 2)}ies`;
+        };
+        return `${noun.slice(0, noun.length - 1)}ies`;
     };
+    
+    return `${noun}s`;
 };
 
 // capitalize first letter of string
