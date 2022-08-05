@@ -3,6 +3,13 @@ const randomArrayValue = array => {
     return array[arrayIndex];
 }
 
+const getName = () => randomArrayValue(names);
+const getNoun = () => randomArrayValue(nouns);
+const getVerb = () => randomArrayValue(verbs);
+const getAdjective = () => randomArrayValue(adjectives);
+const getAdverb = () => randomArrayValue(adverbs);
+const getPronoun = () => randomArrayValue(pronouns);
+
 const names = [
     'Beyonce', 'Simon Cowell', 'Uhtred son of Uhtred', 'Nancy Pelosi', 'Henry Cisneros'
 ]
@@ -27,4 +34,4 @@ const pronouns = [
 
 const stories = [
     '${getName()} ${getVerb()}ed the habits of ${getNoun()} and ${getPronoun()} advised ${getVerb()}ing till ${getPronoun()} were ${getVerb()} on the ${getNoun()} when the {getNoun()} before long would ${getVerb()} {getPronoun()} to sleep. ${getPronoun()} must then ${getVerb()} to ${getVerb()} off the ${getNoun()} and ${getVerb()} on the ${getNoun()}'
-]
+];
