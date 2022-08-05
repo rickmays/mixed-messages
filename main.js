@@ -12,6 +12,15 @@ const getAdjective = () => randomArrayValue(adjectives);
 const getAdverb = () => randomArrayValue(adverbs);
 const getPronoun = () => randomArrayValue(pronouns);
 
+const getPastVerb = () => {
+    let verb = randomArrayValue(verbs);
+    if (verb[verb.length -1] === 'e') {
+        return `${verb}d`
+    } else {
+        return `${verb}ed`
+    };
+};
+
 // capitalize first letter of string
 const cap = string => string.charAt(0).toUpperCase() + string.slice(1);
 
