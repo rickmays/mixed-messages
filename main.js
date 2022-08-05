@@ -30,6 +30,17 @@ const getPreVerb = () => {
     };
 };
 
+const getPluralN = () => {
+    let noun = randomArrayValue(nouns);
+    if (noun[noun.length - 1] === 's' || noun[noun.length - 1] === 'z' || noun[noun.length - 1] === 'x') {
+        return `${noun}es`;
+    } else if (noun.slice(noun.length - 2) === 'ss' || noun.slice(noun.length - 2) === 'sh' || noun.slice(noun.length - 2) === 'ch') {
+        return `${noun}es`;
+    } else {
+        return `${noun}s`;
+    };
+};
+
 // capitalize first letter of string
 const cap = string => string.charAt(0).toUpperCase() + string.slice(1);
 
@@ -57,7 +68,7 @@ const pronouns = [
 
 const stories = [
     `A ${getNoun()} in Texas was arrested this morning after he ${getPastVerb()} a ${getNoun()} in front of a ${getNoun()}. ${getName()} had a history of ${getPreVerb()}, but no one-not even his ${getNoun()}-ever imagined he'd ${getVerb()} with a ${getNoun()}. Credit: MadLibs`,
-    `${getName()} ${getPastVerb()} the habits of ${getNoun()} and ${getPronoun()} advised ${getPreVerb()} till ${getPronoun()} were ${getPreVerb()} on the ${getNoun()} when the ${getNoun()} before long would ${getVerb()} ${getPronoun()} to sleep. ${cap(getPronoun())} must then ${getVerb()} to ${getVerb()} off the ${getNoun()} and ${getVerb()} on the ${getNoun()}. Credit: The Mysterious Island by Jules Verne`
+    `${getName()} ${getPastVerb()} the habits of ${getNoun()} and ${getPronoun()} advised ${getPreVerb()} till ${getPronoun()} were ${getPreVerb()} on the ${getNoun()} when the ${getPluralN()} before long would ${getVerb()} ${getPronoun()} to sleep. ${cap(getPronoun())} must then ${getVerb()} to ${getVerb()} off the ${getNoun()} and ${getVerb()} on the ${getPluralN()}. Credit: The Mysterious Island by Jules Verne`
 ];
 
 getStory();
