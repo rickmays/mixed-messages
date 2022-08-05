@@ -61,14 +61,19 @@ const adjectives = [
 ]
 
 const adverbs = [
-    'bravely', 'cheerfully', 'deftly', 'gracefully', 'warmly', 'lazily', 'rudely', 'wearily', 'quickly', 'leisurely'];
+    'bravely', 'cheerfully', 'deftly', 'gracefully', 'warmly', 'lazily', 'rudely', 'wearily', 'quickly', 'leisurely'
+];
 
 const pronouns = [
-    'he', 'she', 'they', 'we', 'it', 'I', 'you'];
+    'he', 'she', 'they', 'we', 'it', 'I', 'you', 'me', 'us', 'her', 'him', 'them', 
+];
 
 const stories = [
     `A ${getNoun()} in Texas was arrested this morning after he ${getPastVerb()} a ${getNoun()} in front of a ${getNoun()}. ${getName()} had a history of ${getPreVerb()}, but no one-not even his ${getNoun()}-ever imagined he'd ${getVerb()} with a ${getNoun()}. Credit: MadLibs`,
-    `${getName()} ${getPastVerb()} the habits of ${getNoun()} and ${getPronoun()} advised ${getPreVerb()} till ${getPronoun()} were ${getPreVerb()} on the ${getNoun()} when the ${getPluralN()} before long would ${getVerb()} ${getPronoun()} to sleep. ${cap(getPronoun())} must then ${getVerb()} to ${getVerb()} off the ${getNoun()} and ${getVerb()} on the ${getPluralN()}. Credit: The Mysterious Island by Jules Verne`
+    `${getName()} ${getPastVerb()} the habits of ${getNoun()} and ${getPronoun()} advised ${getPreVerb()} till ${getPronoun()} were ${getPreVerb()} on the ${getNoun()} when the ${getPluralN()} before long would ${getVerb()} ${getPronoun()} to sleep. ${cap(getPronoun())} must then ${getVerb()} to ${getVerb()} off the ${getNoun()} and ${getVerb()} on the ${getPluralN()}. Credit: The Mysterious Island by Jules Verne`,
+    `During the Depression, free ${getNoun()} became equated with ${getNoun()} in an effort to ${getVerb()} the economy and ${getVerb()} ${getNoun()}, the New Deal ${getPastVerb()} the 40 hour ${getNoun()} and the ${getNoun()} as the employer of ${getAdjective()} ${getNoun()} Credit: Your Money or Your Life by Vicki Robin & Joe Dominguez`,
+    `${getName()} reports that the ${getNoun()} family ${getNoun()} ${getAdverb()} ${getPastVerb()} only ${getPluralN()} from where the ${getPluralN()} ${getPastVerb()} ${getNoun()}, ${getNoun()}, ${getNoun()}, and other ${getPluralN()} of early ${getNoun()} Credit: A New Song by Jan Karon`,
+    `Her ${getAdjective()} ${getPluralN()}--${getPronoun()}'d like to ${getVerb()} what varieties ${getPronoun()} are--may not be salvageable but they're now ${getPreVerb()} forth ${getAdjective()} ${getNoun()} that looks like the ${getAdjective()} ${getPluralN()} and ${getPluralN()} for ${getNoun()} sprays Credit: Under the Tuscan Sun by Frances Mayes`
 ];
 
 getStory();
