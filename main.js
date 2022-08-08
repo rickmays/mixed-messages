@@ -1,10 +1,13 @@
+//Takes an array as input and returns the value at a randomly selected index between 0 and the array's length
 const randomArrayValue = array => {
     let arrayIndex = Math.floor(Math.random() * array.length);
     return array[arrayIndex];
 };
 
+//Chooses a random story from the story array
 const getStory = () => console.log(randomArrayValue(stories));
 
+//All of these function just return a random value in their respective array.
 const getName = () => randomArrayValue(names);
 const getNoun = () => randomArrayValue(nouns);
 const getVerb = () => randomArrayValue(verbs);
@@ -12,6 +15,7 @@ const getAdjective = () => randomArrayValue(adjectives);
 const getAdverb = () => randomArrayValue(adverbs);
 const getPronoun = () => randomArrayValue(pronouns);
 
+//Pulls in a random value from verb array and sorts through to change it to past tense
 const getPastVerb = () => {
     let verb = randomArrayValue(verbs);
     if (verb[verb.length - 1] === 'e') {
@@ -21,6 +25,7 @@ const getPastVerb = () => {
     };
 };
 
+//Pulls in a random value from verb array and sorts through to change it to present tense
 const getPreVerb = () => {
     let verb = randomArrayValue(verbs);
     if (verb[verb.length - 1] === 'e') {
@@ -30,6 +35,7 @@ const getPreVerb = () => {
     };
 };
 
+//Pulls in a random value from noun array and sorts through to change it to plural form
 const getPluralN = () => {
     let noun = randomArrayValue(nouns);
     let vowels = ['a', 'e', 'i', 'o', 'u'];
